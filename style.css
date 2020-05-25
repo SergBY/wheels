@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  max-width: 1920px;
+  font-family: 'Raleway', sans-serif;
+}
+.header .welcomeSection {
+  background-image: url(img/header_fon.jpg);
+  height: 1116px;
+}
+.header .welcomeSection .welcomeSection-header {
+  padding: 5% 10% 0 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .welcomeSection .welcomeSection-header .wheels {
+  font-size: 30px;
+  letter-spacing: 4px;
+  color: #ededed;
+  font-family: "Raleway";
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+}
+.header .welcomeSection .welcomeSection-header .menu {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+.header .welcomeSection .welcomeSection-header .menu h1 {
+  font-size: 24px;
+  letter-spacing: 3px;
+  color: #ededed;
+  font-family: "Raleway";
+  font-weight: 600;
+  text-align: center;
+}
+.header .welcomeSection .welcomeSection-header .menu img {
+  height: 19px;
+}
+.header .welcomeSection .menu-headline {
+  display: grid;
+  justify-content: end;
+  grid-template-rows: 1fr 2fr;
+  margin: 330px 10% 0 0;
+}
+.header .welcomeSection .menu-headline .menu-headline_name {
+  font-size: 48px;
+  letter-spacing: 6px;
+  color: #ededed;
+  font-family: "Raleway";
+  font-weight: 800;
+  text-align: right;
+  text-transform: uppercase;
+}
+.header .welcomeSection .menu-headline .menu-headline_text {
+  font-size: 24px;
+  letter-spacing: 3px;
+  line-height: 40px;
+  color: #ededed;
+  font-family: "DejaVu Sans";
+  font-weight: 400;
+  text-align: right;
+  width: 404px;
+  padding-left: 220px;
+}
+.header .welcomeSection .mouseIcon {
+  display: flex;
+  justify-content: center;
+  margin-top: 236px;
+}
+.header .menu {
+  background-color: #fff;
+  height: 84px;
+}
+.aboutUs {
+  background-color: #cccccc;
+  height: 324px;
+}
+.someStatistics {
+  background-color: red;
+  height: 457px;
+}
+.featuredProducts {
+  background-color: green;
+  height: 1055px;
+}
+.meetTheTeam {
+  background-color: lightgray;
+  height: 530px;
+}
+.socialShowcase {
+  background-color: lightgreen;
+  height: 708px;
+}
+.footer {
+  background-color: black;
+  height: 527px;
+}
