@@ -66,6 +66,7 @@ body {
                 padding-left: 220px;
             }
         }
+
         .mouseIcon {
 
             display: flex;
@@ -99,13 +100,15 @@ body {
     box-shadow: 0px 14px 27px -14px #cccccc;
 
     .wheels {
-        color: #1c1c1c; 
+        color: #1c1c1c;
     }
 }
+
 .nav {
     ul {
         list-style: none;
         display: flex;
+
         li {
             padding: 0 2rem 0 2rem;
             font-size: 18px;
@@ -114,11 +117,13 @@ body {
             font-weight: 600;
             text-align: center;
             text-transform: uppercase;
-        }            
+        }
+
         a {
             text-decoration: none;
             color: #3b3b3b;
         }
+
         a:hover {
             color: #000000;
         }
@@ -128,60 +133,231 @@ body {
 .aboutUs {
     width: 100%;
     display: grid;
-    grid-template-rows: 50px 25px 100px 60px;
+    grid-template-rows: 70px 100px 60px;
     justify-items: center;
     align-items: center;
     background-color: #fff;
     height: 324px;
-    margin-top: 30px;
+    padding-top: 60px;
+
     img {
         width: 88px;
     }
+
     .text {
-        width: 1336px;
+        max-width: 1396px;
+        max-height: 65px;
         letter-spacing: -0.015em;
         font-size: 14px;
         color: #3b3b3b;
         font-family: "Raleway";
         font-weight: 600;
+
+        p {
+            height: 65px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 0;
+            padding: 0 30px;
+        }
     }
 }
 
-.name {
-    font-size: 30px;
-    letter-spacing: 4px;
-    color: #1d1d1d;
-    font-family: "Raleway";
-    font-weight: 800;
-    text-align: center;
-    text-transform: uppercase;
+.namePart {
+    .name {
+        font-size: 30px;
+        letter-spacing: 4px;
+        color: #1d1d1d;
+        font-family: "Raleway";
+        font-weight: 800;
+        line-height: 2em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .nameText {
+        font-size: 18px;
+        letter-spacing: 2px;
+        color: #3b3b3b;
+        font-family: "Raleway";
+        font-weight: 600;
+        text-align: center;
+    }
 }
 
-.nameText {
-    font-size: 18px;
-    letter-spacing: 2px;
-    color: #3b3b3b;
-    font-family: "Raleway";
-    font-weight: 600;
-    text-align: center;
-}
 
 
 
 .someStatistics {
-    background-color: red;
+    background-image: url(img/bikes_statistic.jpg);
     height: 457px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.someStatistics_text {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    justify-content: space-between;
+    align-items: center;
+    height: 340px;
+
+
+    .name {
+        color: #ededed;
+    }
+
+    .nameText {
+        color: #ededed;
+    }
+}
+
+
+
+.statistic {
+    display: flex;
+    width: 1120px;
+
+    .bikes,
+    .year,
+    .customers {
+        display: grid;
+        width: calc(100% / 3);
+        grid-template-rows: 5fr 3fr;
+        justify-content: center;
+        align-items: flex-start;
+
+        .statistic_number {
+            font-size: 72px;
+            letter-spacing: 9px;
+            color: #ededed;
+            font-family: "Raleway";
+            font-weight: 600;
+            text-align: center;
+            line-height: 1.25em;
+        }
+
+        .statistic_name {
+            font-size: 24px;
+            color: #ededed;
+            font-family: "Raleway";
+            font-weight: 400;
+            text-align: center;
+            text-transform: uppercase;
+            width: 240px;
+        }
+    }
 }
 
 .featuredProducts {
-    background-color: green;
+    background-color: white;
     height: 1055px;
+    display: grid;
+    align-content: space-around;
+
+    .catalog {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 36px;
+        column-gap: 10px;
+        height: 832px;
+        justify-items: center;
+        margin: -50px 12% 0 12%;
+        overflow-y: hidden;
+    }
+}
+
+.catalog_product {
+    display: grid;
+
+    .catalog_product-text {
+        display: grid;
+        justify-content: center;
+    }
+}
+
+.catalog_product-name,
+.catalog_product-price {
+    font-size: 24px;
+    letter-spacing: 3px;
+    color: #3b3b3b;
+    font-family: "Raleway";
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.catalog_product-more {
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding-top: 20px;
+    font-family: "Raleway";
+    font-weight: 600;
+    text-align: center;
+
+    a {
+        color: #3b3b3b;
+        ;
+    }
+
+    a:hover {
+        color: #000000;
+        font-weight: 800;
+    }
+
+    a:visited {
+        color: darkgreen;
+    }
 }
 
 .meetTheTeam {
     background-color: lightgray;
     height: 530px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
+
+.meetTheTeam-content {
+    display: grid;
+    justify-content: center;
+    /*align-items: center;*/
+    grid-template-rows: 2fr 5fr;
+}
+
+.meetTheTeam_peoples {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*justify-content: space-between;*/
+    text-align: center;
+    column-gap: 13.5vw;
+    /*max-width: 1187px;*/
+}
+
+.meetTheTeam_people_name {
+    font-size: 30px;
+    letter-spacing: 4px;
+    color: #1e1e1e;
+    font-family: "Raleway";
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px 0;
+}
+
+.meetTheTeam_people_position {
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #1e1e1e;
+    font-family: "Raleway";
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 
 .socialShowcase {
     background-color: lightgreen;
