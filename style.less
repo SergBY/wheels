@@ -319,6 +319,9 @@ body {
     display: grid;
     justify-content: center;
     align-items: center;
+    .namePart {
+        width: 70vw;
+    }
 }
 
 .meetTheTeam-content {
@@ -329,12 +332,13 @@ body {
 }
 
 .meetTheTeam_peoples {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /*justify-content: space-between;*/
-    text-align: center;
-    column-gap: 13.5vw;
-    /*max-width: 1187px;*/
+    width: 100%;
+    display: flex;
+    /*grid-template-columns: repeat(3, 1fr);*/
+    justify-content: space-between;
+    justify-self: center;
+    /*column-gap: 13.5vw;*/
+    max-width: 1187px;
 }
 
 .meetTheTeam_people_name {

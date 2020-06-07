@@ -265,6 +265,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+.meetTheTeam .namePart {
+  width: 70vw;
+}
 .meetTheTeam-content {
   display: grid;
   justify-content: center;
@@ -272,12 +275,13 @@ body {
   grid-template-rows: 2fr 5fr;
 }
 .meetTheTeam_peoples {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /*justify-content: space-between;*/
-  text-align: center;
-  column-gap: 13.5vw;
-  /*max-width: 1187px;*/
+  width: 100%;
+  display: flex;
+  /*grid-template-columns: repeat(3, 1fr);*/
+  justify-content: space-between;
+  justify-self: center;
+  /*column-gap: 13.5vw;*/
+  max-width: 1187px;
 }
 .meetTheTeam_people_name {
   font-size: 30px;
