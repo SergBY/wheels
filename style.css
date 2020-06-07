@@ -1,7 +1,16 @@
+/*@media only screen and (max-width: 800px) {
+*/
+*,
+::after,
+::before {
+  box-sizing: unset;
+}
 body {
   margin: 0;
   max-width: 1920px;
   font-family: 'Raleway', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
 }
 .header .welcomeSection {
   background-image: url(img/header_fon.jpg);
@@ -18,16 +27,39 @@ body {
   align-items: center;
   background-color: transparent;
 }
-.header .welcomeSection .welcomeSection-header .menu h1 {
+.header .welcomeSection .welcomeSection-header .menu .btn {
   font-size: 24px;
   letter-spacing: 3px;
   color: #ededed;
   font-family: "Raleway";
   font-weight: 600;
   text-align: center;
+  border: none;
+  background-color: transparent;
+}
+.header .welcomeSection .welcomeSection-header .menu .btn:hover {
+  border: none;
+}
+.header .welcomeSection .welcomeSection-header .menu .btn:focus {
+  box-shadow: none;
+}
+.header .welcomeSection .welcomeSection-header .menu .show {
+  background-color: transparent;
 }
 .header .welcomeSection .welcomeSection-header .menu img {
   height: 19px;
+}
+.header .welcomeSection .welcomeSection-header .menu .dropdown-item {
+  text-transform: uppercase;
+  color: #ededed;
+}
+.header .welcomeSection .welcomeSection-header .menu .dropdown-item:hover {
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.header .welcomeSection .welcomeSection-header .menu .dropdown-toggle::after {
+  content: unset;
 }
 .header .welcomeSection .menu-headline {
   display: grid;
@@ -49,7 +81,7 @@ body {
   letter-spacing: 3px;
   line-height: 40px;
   color: #ededed;
-  font-family: "DejaVu Sans";
+  font-family: "Raleway";
   font-weight: 400;
   text-align: right;
   width: 404px;
@@ -58,7 +90,7 @@ body {
 .header .welcomeSection .mouseIcon {
   display: flex;
   justify-content: center;
-  margin-top: 236px;
+  margin-top: 286px;
 }
 .wheels {
   font-size: 30px;
@@ -78,7 +110,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 12rem 0 12rem;
+  padding: 0 5% 0 5%;
   box-shadow: 0px 14px 27px -14px #cccccc;
 }
 .stickyMenu .wheels {
@@ -87,9 +119,10 @@ body {
 .nav ul {
   list-style: none;
   display: flex;
+  margin: 0;
 }
 .nav ul li {
-  padding: 0 2rem 0 2rem;
+  padding: 0 1.5rem 0 1.5rem;
   font-size: 18px;
   letter-spacing: 2px;
   font-family: "Raleway";
@@ -208,7 +241,7 @@ body {
 }
 .featuredProducts {
   background-color: white;
-  height: 1055px;
+  height: 980px;
   display: grid;
   align-content: space-around;
 }
@@ -220,8 +253,24 @@ body {
   column-gap: 10px;
   height: 832px;
   justify-items: center;
-  margin: -50px 12% 0 12%;
+  margin: -50px 11% 0 11%;
   overflow-y: hidden;
+}
+@media only screen and (max-width: 1600px) {
+  .featuredProducts {
+    height: 1360px;
+  }
+  .featuredProducts .catalog {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 36px;
+    column-gap: 10px;
+    height: 1200px;
+    justify-items: center;
+    margin: -50px 11% 0 11%;
+    overflow-y: hidden;
+  }
 }
 .catalog_product {
   display: grid;
@@ -326,6 +375,56 @@ body {
   text-transform: uppercase;
 }
 .footer {
+  display: grid;
   background-color: black;
   height: 527px;
+  justify-self: center;
+}
+.footer .wheels {
+  padding-top: 55px;
+  padding-bottom: 50px;
+}
+.footer_links {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  justify-self: center;
+}
+.footer_links .footer_links_col-name {
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #ededed;
+  font-family: "Raleway";
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.footer_links ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer_links ul li {
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: "Raleway";
+  font-weight: 600;
+  line-height: 2em;
+  text-transform: uppercase;
+}
+.footer_links ul a {
+  text-decoration: none;
+  color: #ededed;
+}
+.footer_links ul a:hover {
+  color: gray;
+}
+.footer_links .footer_links_col-social {
+  display: flex;
+}
+.footer_links .footer_links_col-social li {
+  padding: 0 5px;
+}
+.footer_links .footer_links_col-social img {
+  width: 30px;
+  height: 30px;
 }
