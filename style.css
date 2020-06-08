@@ -19,6 +19,13 @@ body {
   background-image: url(img/header_fon.jpg);
   height: 1080px;
 }
+@media (max-width: 375px) {
+  .header .welcomeSection {
+    background-color: black;
+    background-image: none;
+    height: 667px;
+  }
+}
 .header .welcomeSection .welcomeSection-header {
   padding: 80px 10% 0 10%;
   display: flex;
@@ -71,6 +78,11 @@ body {
   grid-template-rows: 1fr 2fr;
   margin: 330px 10% 0 0;
 }
+@media (max-width: 375px) {
+  .header .welcomeSection .menu-headline {
+    margin: 220px 10% 0 0;
+  }
+}
 .header .welcomeSection .menu-headline .menu-headline_name {
   font-size: 48px;
   letter-spacing: 6px;
@@ -79,6 +91,11 @@ body {
   font-weight: 800;
   text-align: right;
   text-transform: uppercase;
+}
+@media (max-width: 375px) {
+  .header .welcomeSection .menu-headline .menu-headline_name {
+    font-size: 16px;
+  }
 }
 .header .welcomeSection .menu-headline .menu-headline_text {
   font-size: 24px;
@@ -91,10 +108,22 @@ body {
   width: 404px;
   padding-left: 220px;
 }
+@media (max-width: 375px) {
+  .header .welcomeSection .menu-headline .menu-headline_text {
+    font-size: 12px;
+    line-height: 2em;
+    width: 200px;
+  }
+}
 .header .welcomeSection .mouseIcon {
   display: flex;
   justify-content: center;
   margin-top: 286px;
+}
+@media (max-width: 375px) {
+  .header .welcomeSection .mouseIcon {
+    margin-top: 80px;
+  }
 }
 .wheels {
   font-size: 30px;
@@ -117,6 +146,11 @@ body {
   padding: 0 5% 0 5%;
   box-shadow: 0px 14px 27px -14px #cccccc;
 }
+@media (max-width: 375px) {
+  .stickyMenu {
+    display: none;
+  }
+}
 .stickyMenu .wheels {
   color: #1c1c1c;
 }
@@ -124,6 +158,11 @@ body {
   list-style: none;
   display: flex;
   margin: 0;
+}
+@media (max-width: 375px) {
+  .nav ul {
+    display: grid;
+  }
 }
 .nav ul li {
   padding: 0 1.5rem 0 1.5rem;
@@ -164,6 +203,11 @@ body {
   height: 324px;
   padding-top: 60px;
 }
+@media (max-width: 375px) {
+  .aboutUs {
+    background-color: lightgray;
+  }
+}
 .aboutUs img {
   width: 88px;
 }
@@ -193,6 +237,11 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+@media (max-width: 375px) {
+  .namePart .name {
+    font-size: 24px;
+  }
+}
 .namePart .nameText {
   font-size: 18px;
   letter-spacing: 2px;
@@ -201,12 +250,22 @@ body {
   font-weight: 600;
   text-align: center;
 }
+@media (max-width: 375px) {
+  .namePart .nameText {
+    font-size: 16px;
+  }
+}
 .someStatistics {
   background-image: url(img/bikes_statistic.jpg);
   height: 457px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 375px) {
+  .someStatistics {
+    display: none;
+  }
 }
 .someStatistics_text {
   display: grid;
@@ -273,6 +332,11 @@ body {
   margin: -50px 11% 0 11%;
   overflow-y: hidden;
 }
+@media (max-width: 375px) {
+  .featuredProducts .catalog img {
+    width: 270px;
+  }
+}
 @media only screen and (max-width: 1600px) {
   .featuredProducts {
     height: 1480px;
@@ -318,6 +382,11 @@ body {
   font-weight: 600;
   text-align: center;
 }
+@media (max-width: 375px) {
+  .catalog_product-more {
+    padding: 0;
+  }
+}
 .catalog_product-more a {
   color: #3b3b3b;
 }
@@ -335,13 +404,28 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 375px) {
+  .meetTheTeam {
+    height: 800px;
+  }
+}
 .meetTheTeam .namePart {
   width: 70vw;
+}
+@media (max-width: 375px) {
+  .meetTheTeam .namePart {
+    width: 100%;
+  }
 }
 .meetTheTeam-content {
   display: grid;
   justify-content: center;
   grid-template-rows: 2fr 5fr;
+}
+@media (max-width: 375px) {
+  .meetTheTeam-content {
+    grid-template-rows: 1fr 8fr;
+  }
 }
 .meetTheTeam_peoples {
   width: 100%;
@@ -349,6 +433,20 @@ body {
   justify-content: space-between;
   justify-self: center;
   max-width: 1187px;
+}
+@media (max-width: 375px) {
+  .meetTheTeam_peoples {
+    display: grid;
+    justify-content: center;
+  }
+  .meetTheTeam_peoples img {
+    width: 150px;
+  }
+  .meetTheTeam_peoples .meetTheTeam_people {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 30px;
+  }
 }
 .meetTheTeam_people_name {
   font-size: 30px;
@@ -360,6 +458,12 @@ body {
   text-transform: uppercase;
   padding: 15px 0;
 }
+@media (max-width: 375px) {
+  .meetTheTeam_people_name {
+    padding: 0;
+    font-size: 24px;
+  }
+}
 .meetTheTeam_people_position {
   font-size: 18px;
   letter-spacing: 2px;
@@ -368,6 +472,11 @@ body {
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
+}
+@media (max-width: 375px) {
+  .meetTheTeam_people_position {
+    font-size: 14px;
+  }
 }
 .socialShowcase {
   height: 628px;

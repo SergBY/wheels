@@ -24,6 +24,11 @@ body {
     .welcomeSection {
         background-image: url(img/header_fon.jpg);
         height: 1080px;
+        @media (max-width: 375px) {
+            background-color: black;
+            background-image: none;
+            height: 667px;
+        }
 
         .welcomeSection-header {
             padding: 80px 10% 0 10%;
@@ -88,6 +93,9 @@ body {
             justify-content: end;
             grid-template-rows: 1fr 2fr;
             margin: 330px 10% 0 0;
+            @media (max-width: 375px) {
+                margin: 220px 10% 0 0;
+            }
 
             .menu-headline_name {
                 font-size: 48px;
@@ -97,6 +105,9 @@ body {
                 font-weight: 800;
                 text-align: right;
                 text-transform: uppercase;
+                @media (max-width: 375px) {
+                    font-size: 16px;
+                }
             }
 
             .menu-headline_text {
@@ -109,6 +120,11 @@ body {
                 text-align: right;
                 width: 404px;
                 padding-left: 220px;
+                @media (max-width: 375px) {
+                    font-size: 12px;
+                    line-height: 2em;
+                    width: 200px;
+                }
             }
         }
 
@@ -117,6 +133,9 @@ body {
             display: flex;
             justify-content: center;
             margin-top: 286px;
+            @media (max-width: 375px) {
+                margin-top: 80px;;
+            }
         }
     }
 }
@@ -144,6 +163,10 @@ body {
     padding: 0 5% 0 5%;
     box-shadow: 0px 14px 27px -14px #cccccc;
 
+    @media (max-width: 375px) {
+        display: none;
+    }
+
     .wheels {
         color: #1c1c1c;
     }
@@ -154,6 +177,10 @@ body {
         list-style: none;
         display: flex;
         margin: 0;
+
+        @media (max-width: 375px) {
+            display: grid;
+        }
 
         li {
             padding: 0 1.5rem 0 1.5rem;
@@ -196,6 +223,9 @@ body {
     background-color: #fff;
     height: 324px;
     padding-top: 60px;
+    @media (max-width: 375px) {
+        background-color: lightgray;
+    }
 
     img {
         width: 88px;
@@ -230,6 +260,9 @@ body {
         line-height: 2em;
         text-align: center;
         text-transform: uppercase;
+        @media (max-width: 375px) {
+            font-size: 24px;
+        }
     }
 
     .nameText {
@@ -239,6 +272,9 @@ body {
         font-family: "Raleway";
         font-weight: 600;
         text-align: center;
+        @media (max-width: 375px) {
+            font-size: 16px;
+        }
     }
 }
 
@@ -251,7 +287,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    @media (max-width: 375px) {
+        display: none;
+    }
 }
 
 .someStatistics_text {
@@ -324,7 +362,12 @@ body {
         justify-items: center;
         margin: -50px 11% 0 11%;
         overflow-y: hidden;
+        @media (max-width: 375px) {
 
+            img {
+                width: 270px;
+            }
+        }
     }
 }
 
@@ -379,6 +422,9 @@ body {
     font-family: "Raleway";
     font-weight: 600;
     text-align: center;
+    @media (max-width: 375px) {
+        padding: 0;
+    }
 
     a {
         color: #3b3b3b;
@@ -401,9 +447,15 @@ body {
     display: grid;
     justify-content: center;
     align-items: center;
+    @media (max-width: 375px) {
+        height: 800px;
+    }
 
     .namePart {
         width: 70vw;
+        @media (max-width: 375px) {
+            width: 100%;
+        }
     }
 }
 
@@ -411,6 +463,9 @@ body {
     display: grid;
     justify-content: center;
     grid-template-rows: 2fr 5fr;
+    @media (max-width: 375px) {
+        grid-template-rows: 1fr 8fr;
+    }
 }
 
 .meetTheTeam_peoples {
@@ -419,6 +474,18 @@ body {
     justify-content: space-between;
     justify-self: center;
     max-width: 1187px;
+    @media (max-width: 375px) {
+        display: grid;
+        justify-content: center;
+        img {
+            width: 150px;
+        }
+        .meetTheTeam_people {
+            display: grid;
+            justify-items: center;
+            margin-bottom: 30px;
+        }
+    }
 }
 
 .meetTheTeam_people_name {
@@ -430,6 +497,10 @@ body {
     text-align: center;
     text-transform: uppercase;
     padding: 15px 0;
+    @media (max-width: 375px) {
+        padding: 0;
+        font-size: 24px;
+    }
 }
 
 .meetTheTeam_people_position {
@@ -440,6 +511,9 @@ body {
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
+    @media (max-width: 375px) {
+        font-size: 14px;
+    }
 }
 
 .socialShowcase {
